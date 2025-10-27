@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coming Soon — Example</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <img src="satsoko.png" alt="Satsoko logo" class="logo" />
+    <h1>Coming Soon</h1>
+    <p class="subtitle">We're building something awesome. Stay tuned!</p>
+    <p class="small">© <span id="year"></span> Satsoko</p>
+  </main>
+
+  <script>
+    // set current year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
