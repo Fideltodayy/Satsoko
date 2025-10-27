@@ -1,6 +1,6 @@
 :root {
-  --bg: #0f1724;
-  --fg: #f8fafc;
+  --bg: #fcefdc;
+  --fg: #ff7a00;
   --accent: #ff7a00; /* bitcoin orange-style — change if you want */
   --maxw: 900px;
   --pad: 24px;
@@ -10,7 +10,7 @@
 html,body {height:100%; margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
 body{
   display:flex; align-items:center; justify-content:center;
-  background: linear-gradient(180deg, #071021 0%, #0f1724 100%);
+  background: #fcefdc;
   color:var(--fg);
   padding: var(--pad);
 }
@@ -18,13 +18,13 @@ body{
   text-align:center;
   max-width:var(--maxw);
   width:100%;
-  background: rgba(255,255,255,0.03);
-  padding: 48px;
-  border-radius: var(--radius);
-  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
 }
 .logo {
-  height:88px;
+/* make the logo the main focus: occupy most of the viewport while keeping aspect ratio */
+height: 75vh;
+max-height: 80vh;
+max-width: 95vw;
+object-fit: contain;
   width:auto;
   display:block;
   margin: 0 auto 18px;
@@ -35,12 +35,10 @@ h1{
   letter-spacing: -.02em;
 }
 .subtitle{
-  color: rgba(248,250,252,0.85);
   margin-bottom: 18px;
   font-size: 1.05rem;
 }
 .small{
-  color: rgba(248,250,252,0.55);
   font-size: .9rem;
   margin-top: 20px;
 }
